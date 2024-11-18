@@ -11,6 +11,9 @@ import {
   ComputerModel,
   SingleBaseModel,
 } from './entity/inheritance.entity';
+import { ProfileModel } from './entity/profile.entity';
+import { PostModel } from './entity/post.entity';
+import { TagModel } from './entity/tag.entity';
 
 @Module({
   imports: [
@@ -30,6 +33,9 @@ import {
         ComputerModel,
         AirplaneModel,
         SingleBaseModel,
+        ProfileModel,
+        PostModel,
+        TagModel,
       ],
       synchronize: true,
     }),
@@ -39,6 +45,9 @@ import {
       TeacherModel,
       BookModel,
       CarModel,
+      ProfileModel,
+      PostModel,
+      TagModel,
     ]),
   ],
   controllers: [AppController],
